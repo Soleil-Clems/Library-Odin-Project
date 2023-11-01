@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library Odin Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
+    <header id="header">
         <nav>
             <h1>library</h1>
+            <p id="mode"><i id="icon" class="fa-regular fa-moon"></i></p>
             <p>OdinProject</p>
         </nav>
     </header>
@@ -18,30 +20,24 @@
         <div class="addBookDiv">
             <p id="addBook">+ Add book</p>
         </div>
-        <div class="taskContainer">
-            <div class="card">
-                <p class="title same">title</p>
-                <p class="author same">author</p>
-                <p class="pages same">pages</p>
-                <p class="status same">status</p>
-                <p class="remove same">remove</p>
-            </div>
-            <div class="card">
-                <p class="title same">title</p>
-                <p class="author same">author</p>
-                <p class="pages same">pages</p>
-                <p class="status same">status</p>
-                <p class="remove same">remove</p>
-            </div>
-            <div class="card">
-                <p class="title same">title</p>
-                <p class="author same">author</p>
-                <p class="pages same">pages</p>
-                <p class="status same">status</p>
-                <p class="remove same">remove</p>
-            </div>
-        </div>
+        
+        <div class="taskContainer"></div>
+
+        
     </main>
+    <div id="formBookDiv" class="formBookDiv">
+        <form action="" id="form">
+            <h1>Add new book</h1>
+            <input type="text" class="same" id="title" placeholder="Title">
+            <input type="text" class="same" id="author" placeholder="Author">
+            <input type="number" class="same" id="pages" placeholder="Pages">
+            <div class="is-read">
+                <label for="is-read">Have you read it?</label>
+                <input class="checkbox" type="checkbox" id="isRead">
+            </div>
+            <input type="submit" class="same status-ok" id="submit" value="Submit">
+        </form>
+    </div>
     <footer>Copyright © 2023 Soleil-Clems</footer>
 
     <script src="js/script.js"></script>
